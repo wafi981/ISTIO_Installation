@@ -29,6 +29,8 @@ helm install istiod istio/istiod -n istio-system --wait
 
 ```
 
+# Note:
+
 
 Just add ``` kubeconfig ``` tag to specify which cluster you are installing the chart for
 
@@ -36,7 +38,7 @@ For example
 
 ```
 
-helm list -A --kubeconfig /home/ubuntu/work/kind/.kind2/config
+helm install xyz...  --kubeconfig /home/ubuntu/work/kind/.kind2/config
 
 ```
 
